@@ -1,0 +1,19 @@
+<header>
+
+<h1>Google Map</h1>
+<h2> Enter a location and find it !</h2>
+</header>
+
+<input id="pac-input" class="controls" type="text"
+       placeholder="Enter a location">
+   <div id="map"></div>
+   <div id="infowindow-content">
+     <span id="place-name"  class="title"></span><br>
+     Place ID <span id="place-id"></span><br>
+     <span id="place-address"></span>
+   </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARheZUMSztMDvZ3a7KFvTyxIYxruKINzA&libraries=places&callback=initMap" async defer></script>
+
+
+<%= javascript_include_tag 'index.js' %>
